@@ -1,0 +1,39 @@
+.banner {  
+    width: 100vw; 
+    white-space: nowrap; 
+    overflow: hidden;
+    background: #9bfc00; 
+}
+.text { 
+    font-family: fantasy;
+    position: absolute; 
+    font-size: 10em; 
+    font-weight: bolder;
+    padding: 10px; 
+    background: #9bfc00; 
+    color: #0d6efd;
+    white-space: nowrap;
+}
+.wrapper {
+    background: #0d6efd;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+.text {
+    font-size: 6vw; /* Reduce font size */
+}
+.wrapper {
+    height: 12vw; /* Reduce wrapper height */
+}
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+.text {
+    font-size: 4vw; /* Further reduce font size */
+}
+.wrapper {
+    height: 10vw; /* Further reduce height */
+}
+}

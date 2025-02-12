@@ -8,6 +8,7 @@ body {
     justify-content: center; /*indhold centreret*/
     align-items: center; /*centreret vertikalt*/
     height: 100vh; 
+    overflow: hidden;
 }
 
 /* container til tekst og formular */
