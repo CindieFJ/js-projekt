@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8"> <!-- så danske bogstaver vises korrekt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gør siden responsiv på mobil -->
+    <title>tinderbox</title> <!-- Titel på hjemmesiden -->
+    <link rel="stylesheet" href="formular.css">
+</head>
+<body> 
+        <!-- overlay når slideshow kører-->
+        <div id="overlay" class="overlay"></div> 
+
+    <!-- teksten og formularen -->
+    <section class="newsletter-container">
+
+        <!-- Venstre side med tekst og pære -->
+        <div class="text-section">
+            <button id="lightbulb">💡</button> <!-- pæreikonet -->
+            <h1>VÆR FØRST MED DE STØRSTE NYHEDER</h1>
+            <p>Få direkte besked om billetsalg, offentliggørelser og andre spændende TB-nyheder med nyhedsbrevet.</p> 
+        </div>
+
+        <!-- Højre side med formularen -->
+        <div class="form-section">
+            <form> <!-- Formular -->
+                <input type="text" placeholder="Fornavn" required> <!-- inputfelt til navn (required) gør det obligatorisk -->
+                <input type="email" placeholder="Email" required> <!-- inputfelt til email (required) gør det obligatorisk -->
+                <button class="circle-button">JA TAK</button> <!-- den runde cirkel knap -->
+            </form>
+        </div>
+
+    </section>
+
+    <script src="formular.js"></script>
+</body>
+</html>
