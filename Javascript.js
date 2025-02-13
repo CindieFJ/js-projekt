@@ -1,3 +1,4 @@
+// Cindies header og hero
 document.addEventListener("DOMContentLoaded", function () {
     console.log("JavaScript er blevet indlæst!");
   
@@ -47,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
         
     });
   });
+
+// Nicolines slideshow
   let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const dotsContainer = document.querySelector(".dots");
@@ -80,7 +83,7 @@ function autoSlide() {
 showSlide(slideIndex);
 setTimeout(autoSlide, 3000);
 
-// Banner
+// Povilas banner
 document.addEventListener("DOMContentLoaded", () => {
     const banner = document.querySelector(".banner");
     const texts = 
@@ -117,6 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     animate();
 });
+
+//Yagmurs kontaktformular og lyspæreknap
 // finder HTML-elementerne // her bruger jeg DOM
 const lightbulb = document.getElementById("lightbulb"); //pæren
 const body = document.body; //hele vody elementet (for at ændre baggrunden)
