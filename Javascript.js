@@ -84,11 +84,11 @@ setTimeout(autoSlide, 3000);
 document.addEventListener("DOMContentLoaded", () => {
     const banner = document.querySelector(".banner");
     const texts = 
-    ["TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE", 
-    "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE",
-    "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE",
-    "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE"];
-    let elements = [], speed = 0.4;
+    ["TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE /", 
+    "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE /",
+    "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE /",
+    "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE /"];
+    let elements = [], speed = 8;
     
     texts.forEach((msg, i) => {
     let div = document.createElement("div");
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     div.textContent = msg;
     banner.appendChild(div);
 
-    let startPos = i * 25;
+    let startPos = 5 + i * 2;
     div.style.left = `${startPos}vw`;
     elements.push(div);
     }); 
