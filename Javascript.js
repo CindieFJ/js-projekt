@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE /",
     "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE /",
     "TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE / TB25 / ODENSE /"];
-    let elements = [], speed = 8;
+    let elements = [], speed = 0.4;
     
     texts.forEach((msg, i) => {
     let div = document.createElement("div");
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     div.textContent = msg;
     banner.appendChild(div);
 
-    let startPos = 5 + i * 2;
+    let startPos = -10 + i * 40;
     div.style.left = `${startPos}vw`;
     elements.push(div);
     }); 
