@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     div.textContent = msg;
     banner.appendChild(div);
 
-    let startPos = i * 80;
+    let startPos = i * div.offsetWidth;
     div.style.left = `${startPos}vw`;
     elements.push(div);
     }); 
